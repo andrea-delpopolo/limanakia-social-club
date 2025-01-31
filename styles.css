@@ -11,7 +11,7 @@ body {
   color: #333;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Aligning to the top to give space for the map */
+  align-items: flex-start;
   height: 100vh;
   margin: 0;
   padding: 20px;
@@ -20,15 +20,10 @@ body {
 .container {
   text-align: center;
   padding: 20px;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* Reduced transparency for clearer content */
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  max-width: 1024px;
   width: 100%;
   margin-top: 20px;
 }
@@ -40,7 +35,7 @@ header h1 {
 }
 
 .tagline {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
 }
 
@@ -76,16 +71,10 @@ header h1 {
   background-color: #005fa3;
 }
 
-footer {
-  margin-top: 30px;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-.google-map-container {
-  width: 100%;
-  height: 400px;
+.map-container {
   margin-top: 40px;
+  width: 100%;
+  height: 300px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -96,6 +85,26 @@ iframe {
   border: 0;
 }
 
-.map-container {
-  margin-top: 20px;
+.rules-section {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.rules-section h2 {
+  font-size: 1.8rem;
+  color: #0074cc;
+  margin-bottom: 15px;
+}
+
+.rules-list {
+  font-size: 1.1rem;
+  color: #333;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #777;
 }
